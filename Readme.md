@@ -56,7 +56,9 @@ CFFが最初の落ち込みピーク周波数となる。
 
 ## 使用例
 
-![Alt text](img/Scanline.gif)
+![Alt input](img/scanlineInput.jpg "input")
+
+![Alt MAFilterOutput](img/MAFilterScan.jpg "MAFilterOutput")
 
 ## ２次遅れ系
 ---
@@ -73,3 +75,8 @@ CFFの1/2がカットオフ周波数となる。CFFの周波数成分は常に-1
 ![alt CFF=20Hz](img/CFF=20.jpg "CFF=20Hz")
 ![alt CFF=40Hz](img/CFF=40.jpg "CFF=40Hz")
 
+## 使用例
+
+![Alt input](img/scanlineInput.jpg "input")
+
+![Alt RLCFilterOutput](img/RLCFilterScan.jpg "RLCFilterOutput")
