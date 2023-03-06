@@ -26,6 +26,6 @@ LPFMode = "RLC"
     
 # settings for RLC
 if LPFMode == "RLC":
-    Q = 2
+    Q = 5
     L = 0.01
     fc = CFF / 2
