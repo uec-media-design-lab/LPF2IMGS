@@ -36,8 +36,8 @@ LPF2IMGSは、複数枚の連番画像に低域通過フィルタ（LPF）をか
     python LPF2IMGS.py
     ```
 
-## LPFの仕様
----
+# LPFの仕様
+
 本スクリプトでは各ピクセルの色チャンネルに対して個別にLPFを適用します。LPFの実装は２種類のアルゴリズムで行っています。
 
 ## 移動平均法
@@ -52,7 +52,7 @@ $f_{s}$は入力刺激のサンプリング周波数を表す．
 
 CFFが最初の落ち込みピーク周波数となる。
 
-![Alt text](img/MAfilter.jpg)
+![Alt MAFilter](img/MAfilter.jpg "CFF=40Hz")
 
 ## 使用例
 
