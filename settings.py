@@ -20,8 +20,8 @@ renderDuration = 5.0 #[seconds]
 CFF = 40.0
 
 # LPF Mode
-# ["MovingAvarage", "RLC"]
-# LPFMode = "MovingAvarage"
+# ["MovingAverage", "RLC"]
+# LPFMode = "MovingAverage"
 LPFMode = "RLC"
     
 # settings for RLC
