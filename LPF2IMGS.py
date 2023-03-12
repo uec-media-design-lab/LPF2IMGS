@@ -56,11 +56,6 @@ def MovingAverage():
         time += dt
         count += 1
 
-    # make output Movie
-    stream = fp.input(settings.outputDIR + "/MovingAverage/output_%04d" + settings.EXT, framerate=settings.encodeFPS)
-    stream = fp.output(stream, settings.outputDIR + "/MovingAverage/output.mp4",pix_fmt='yuv420p')
-    fp.run(stream)
-
 def RLC():
     # make output directory
     os.makedirs(settings.outputDIR + "/RLC",exist_ok=True)
@@ -109,14 +104,13 @@ def RLC():
         time += dt
         count += 1
 
-    # make output Movie
-    stream = fp.input(settings.outputDIR + "/RLC/output_%04d" + settings.EXT, framerate=settings.encodeFPS)
-    stream = fp.output(stream, settings.outputDIR + "/RLC/output.mp4",pix_fmt='yuv420p')
-    fp.run(stream)
-
 if settings.LPFMode == "MovingAverage":
     MovingAverage()
 elif settings.LPFMode == "RLC":
     RLC()
 
 
+# make output Movie
+stream = fp.input(settings.outputDIR + "/" + settings.LPFMode + "/output_%04d" + settings.EXT, framerate=settings.encodeFPS)
+stream = fp.output(stream, settings.outputDIR + "/" + settings.LPFMode + "/output.mp4",pix_fmt='yuv420p')
+fp.run(stream)
